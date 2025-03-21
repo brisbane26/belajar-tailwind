@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind</title>
+    <title>Belajar Tailwind</title>
+    <link rel="stylesheet" href="./style/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 </head>
-<body>
-    <h1>Belajar Tailwind</h1>
+
+<body class="px-16 font-poppins">
+
+    <header class="flex justify-between items-center border-b border-gray-200">
+        <div class="w-[150px]">
+            <img src="./image/logo.png" alt="" class="w-full h-full">
+        </div>
+
+        <ul class="relative flex items-center gap-6">
+            <li class="relative py-4 group">
+                <a class="group-hover:text-accent group-hover:font-bold" href="">Home</a>
+                <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-3/4 transition-all duration-300"></span>
+            </li>
+            <li class="">
+                <a href="">Shop</a>
+            </li>
+            <li class="">
+                <a href="">Plant Care</a>
+            </li>
+            <li class="">
+                <a href="">Blogs</a>
+            </li>
+        </ul>
+
+        <div class="flex gap-6 items-center">
+            <span class="material-symbols-outlined">
+                search
+                </span>
+
+            <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+
+            <button class="flex gap-2 items-center bg-accent py-2 px-4 text-white rounded-md">
+                <span class="material-symbols-outlined">
+                    login
+                    </span>
+                Login
+            </button>
+        </div>
+
+    </header>
+
 </body>
+
 </html>
